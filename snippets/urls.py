@@ -4,8 +4,8 @@ from . import views
 
 
 urlpatterns = [
-	path('snippets/', views.snippet_list, name='list'),
-	path('snippets/<int:pk>/', views.snippet_detail, name='detial'),
+	path('snippets/', views.SnippetList.as_view(), name='list'),
+	path('snippets/<int:pk>/', views.SnippetDetail.as_view(), name='detial'),
 ]
 
 
